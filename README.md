@@ -103,9 +103,37 @@ mov [5006h],ax;
 
 ret
 ```
+## Program For Logical Operations
+```
+org 100h
+MOV AX,2345H;
+MOV BX,2134H;
+AND AX,BX; 
+MOV [4000H],AX; 
+
+NOT AX;
+MOV [4002H],AX;
+
+MOV AX,2345H;
+OR AX,BX;
+MOV [4004H],AX; 
+
+NOT AX;
+MOV [4006H],AX; 
+
+MOV AX,2345H;
+NOT AX;
+MOV [4008H],AX;
+
+
+ret
+```
+
 
 ## Output  
 <img width="1919" height="1088" alt="Screenshot 2026-01-28 083556" src="https://github.com/user-attachments/assets/894bca2f-e1b2-4232-80fa-f0f83a1774bf" />
+
+<img width="1210" height="869" alt="Screenshot 2026-02-24 085900" src="https://github.com/user-attachments/assets/9030f506-2c81-4607-9e00-ee1b336c46b9" />
 
 
 
